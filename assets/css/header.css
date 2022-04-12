@@ -1,11 +1,97 @@
 #cabecalho{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
+    border-bottom: 1px solid var(--cinza);
+    padding: 2rem 0;
 }
 
 .cabecalho-container-logo-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    margin-left: 2rem;
+}
+
+.cabecalho-logo{
+    color: var(--laranja);
+    font-size: 2rem;
+}
+
+.cabecalho-button{
+    background-color: white;
+    border: none;
+    --menu-image: url('../icons/not-active.png');
+    background-image: var(--menu-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: .5s;
+    margin-right: 2rem;
+}
+
+.cabecalho-button-active{
+    --menu-image: url('../icons/active.png');
+    background-image: var(--menu-image);
+}
+
+.cabecalho-nav-not-active{
+    display: none;
+    margin-right: 2rem;
+}
+
+.cabecalho-nav{  
+    display: block;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.cabecalho-itens{
+    display: inline-block;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.cabecalho-itens a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--cinza);
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px){
+
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.cabecalho-container-logo-menu{
+    margin-left: 3rem;
+}
+
+.cabecalho-logo:hover{
+    color: var(--cinza);
+}
+
+.cabecalho-button{
+    display: none;
+}
+
+.cabecalho-nav-not-active{
+    display: flex;
+    margin-right: 3rem;
+}
+
+.cabecalho-itens a:hover{
+    color: var(--laranja);
+}
+
 }
