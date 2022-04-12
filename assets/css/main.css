@@ -1,0 +1,93 @@
+#principal{
+    width: 100%;
+}
+
+.principal-container{
+    margin: auto;
+    margin-top: 3rem;
+    width: 85%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.principal-image{
+    width: 95%;
+    max-width: 570px;
+}
+
+.principal-container-conteudo{
+    margin-top: 2rem;
+}
+
+.principal-tittle{
+    color: var(--cinza);
+    font-size: 3rem;
+}
+
+.principal-descricao, .principal-button{
+    margin-top: 2rem;
+}
+
+.principal-descricao{
+    font-size: 2rem;
+}
+
+.principal-button{
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    width: 80%;
+    max-width: 360px;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--laranja);
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1143px){
+
+.principal-container{
+    position: relative;
+    max-width: 3000px;
+}
+
+.principal-image{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    transition: 2s;
+}
+
+.principal-container-conteudo{
+    text-align: left;
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+.principal-tittle{
+    font-size: 4rem;
+}
+
+.principal-tittle:hover{
+    color: var(--laranja);
+}
+
+.principal-descricao{
+    color: var(--cinza);
+}
+
+.principal-button{
+    cursor: pointer;
+}
+
+.principal-button:hover{
+    background-color: var(--cinza);
+}
+}
