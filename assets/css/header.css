@@ -1,0 +1,11 @@
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.cabecalho-container-logo-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
